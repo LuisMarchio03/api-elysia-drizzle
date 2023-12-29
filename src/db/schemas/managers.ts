@@ -1,11 +1,7 @@
 import { createId } from '@paralleldrive/cuid2'
 import { relations } from 'drizzle-orm'
-import { pgTable, text, timestamp, boolean, jsonb } from 'drizzle-orm/pg-core'
+import { pgTable, text } from 'drizzle-orm/pg-core'
 import { restaurants } from './restaurants'
-
-// - id: int (primary key)
-// - name: varchar(255)
-// - restaurant_id: int (foreign key to Restaurants table)
 
 export const managers = pgTable('managers', {
   id: text('id')
