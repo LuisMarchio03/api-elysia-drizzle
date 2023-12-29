@@ -8,7 +8,7 @@
 
 ## Compatibilidade com Runtimes
 
-Projetado para funcionar no Bun, Node, Cloudflare Workers ou qualquer runtime compatível com a Web Standard API.
+Projetado para funcionar no Bun, Node, Cloudflare Workers ou qualquerz runtime compatível com a Web Standard API.
 
 ## Configuração do Banco de Dados
 
