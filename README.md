@@ -87,11 +87,6 @@ Certifique-se de que o Docker está instalado.
 - [] APIs Abertas para Parceiros: Disponibilizar APIs abertas para que restaurantes parceiros possam integrar seus sistemas diretamente ao aplicativo.
 - [] Inteligência Artificial para Previsão de Pedidos: Utilizar IA para prever a demanda e otimizar os estoques dos restaurantes.
 
-Supabase
-
-api-elysia-drizzle
-Password: cgNyOVxyYVqQTLuS
-
 ## English
 
 **Restaurants table:**
