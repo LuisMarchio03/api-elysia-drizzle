@@ -8,10 +8,10 @@ export const reviews = pgTable('reviews', {
   id: text('id')
     .$defaultFn(() => createId())
     .primaryKey(),
-  restaurantId: integer('restaurant_id').references(() => restaurants.id, {
+  restaurantId: text('restaurant_id').references(() => restaurants.id, {
     onDelete: 'set null',
   }),
-  userId: integer('user_id').references(() => users.id, {
+  userId: text('user_id').references(() => users.id, {
     onDelete: 'set null',
   }),
   rating: integer('rating').notNull(),
