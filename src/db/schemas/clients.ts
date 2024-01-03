@@ -6,7 +6,7 @@ export const clients = pgTable('clients', {
     .$defaultFn(() => createId())
     .primaryKey(),
   name: varchar('name').notNull(),
-  cnpj: varchar('cnpj').notNull(), // Login com cnpj
+  cnpj: varchar('cnpj').notNull().unique(), // Login com cnpj
   opening_date: date('opening_date').notNull(),
   legal_entity_name: varchar('legal_entity_name').notNull(),
   password: varchar('password').notNull(), // e Password
