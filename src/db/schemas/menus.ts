@@ -7,7 +7,7 @@ export const menus = pgTable('menus', {
   id: text('id')
     .$defaultFn(() => createId())
     .primaryKey(),
-  restaurantId: integer('restaurant_id').references(() => restaurants.id, {
+  restaurantId: text('restaurant_id').references(() => restaurants.id, {
     onDelete: 'set null',
   }),
   dish: varchar('dish').notNull(),
