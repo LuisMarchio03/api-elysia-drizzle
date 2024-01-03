@@ -8,10 +8,10 @@ export const orders = pgTable('orders', {
   id: text('id')
     .$defaultFn(() => createId())
     .primaryKey(),
-  userId: integer('user_id').references(() => users.id, {
+  userId: text('user_id').references(() => users.id, {
     onDelete: 'set null',
   }),
-  restaurantId: integer('restaurant_id').references(() => restaurants.id, {
+  restaurantId: text('restaurant_id').references(() => restaurants.id, {
     onDelete: 'set null',
   }),
   status: varchar('status').notNull(),
