@@ -9,7 +9,7 @@
     "migrate": "bun src/db/migrate.ts",
     "seed": "bun src/db/seed.ts"
   },
-  "author": "Luís Gabriel Marchió <luisgabrielmarchio75@gmail.com>",
+  "author": "Luís Gabriel Marchió Batista <luisgabrielmarchio75@gmail.com>",
   "license": "MIT",
   "dependencies": {
     "@elysiajs/cookie": "^0.7.0",
