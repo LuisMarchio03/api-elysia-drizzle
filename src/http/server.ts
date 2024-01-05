@@ -3,6 +3,7 @@ import { cors } from '@elysiajs/cors'
 
 import { getClients } from './routes/clients/get-clients'
 import { registerClient } from './routes/clients/register-client'
+import { getClient } from './routes/clients/get-client'
 
 const app = new Elysia()
   .use(
@@ -23,6 +24,7 @@ const app = new Elysia()
   )
   .use(getClients)
   .use(registerClient)
+  .use(getClient)
 
 app.listen(8888)
 

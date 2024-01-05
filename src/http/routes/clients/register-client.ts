@@ -5,6 +5,7 @@ import { db } from '@/db/connection'
 import { z } from 'zod'
 
 import Elysia from 'elysia'
+import { eq, sql } from 'drizzle-orm'
 
 
 interface IDataCnpj {
@@ -27,11 +28,9 @@ export const registerClient = new Elysia().post(
       const { cnpj, name, password } = registerClientBodySchema.parse(body)
 
       const alreadyExists = await db.query.clients.findFirst({
-        where: {
-          cnpj: cnpj,
-        },
-      });
-      
+        where: eq(clients.cnpj, cnpj)
+      })
+
       if (alreadyExists) {
         throw new Error("Client already exists")
       }
